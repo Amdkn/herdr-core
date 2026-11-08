@@ -1,0 +1,24 @@
+{
+  "$schema": "https://aspaceos.tech/schemas/cordis-fiber-v5.json",
+  "name": "@aspace-v5/herdr-core",
+  "submodule_path": "01_Forkable/FKB00_Runtime/04_ADE_OpenRig/herdr-core",
+  "sovereign_fork_url": "https://github.com/Amdkn/herdr-core.git",
+  "branch": "aspace-v5-native",
+  "family": "ADE_MULTIPLEXER_AND_HARNESSES",
+  "fractal_layer": "8L",
+  "holon_owner": "A1-MORTY / J1-JERRY",
+  "capabilities": [
+    "herdr_rust_pty",
+    "orca_fleet_router",
+    "t3code_cockpit",
+    "universal_harness_gateway_31415"
+  ],
+  "a0_integration_target": "01_Forkable/FKB01_Inference/03_Inference_FreeCloud/aspace_freecloud_gateway.py",
+  "egm_gateway_endpoint": "http://127.0.0.1:31415/v1/chat/completions",
+  "shared_brain_path": "00_Memoire/shared_brain/memory.jsonl",
+  "cordis_contract": {
+    "everything_is_a_plugin": true,
+    "revertible_effects": true,
+    "reactive_coeffects": true
+  }
+}
