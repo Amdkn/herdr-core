@@ -1,0 +1,12 @@
+[package]
+name = "aspace-herdr-core-protocol-proof"
+version = "0.1.0"
+edition = "2021"
+
+# Detached from the herdr-core workspace on purpose: the proof is adapter
+# code (D-N053 pas F1, H-F1-3), not an upstream crate.
+[workspace]
+
+[dependencies]
+herdr-core = { path = "../../crates/herdr-core" }
+serde_json = "=1.0.154"

@@ -1,0 +1,6 @@
+# A'Space adapter config for herdr-core (D-N053 pas F1, D-F1-5).
+# Install to $XDG_CONFIG_HOME/herdr-core/config.toml (default
+# ~/.config/herdr-core/config.toml). Upstream defaults are in
+# crates/herdr-core/src/config.rs; only the forced switch lives here.
+# notes = false : hc types nothing on its own (default upstream: on).
+notes = false

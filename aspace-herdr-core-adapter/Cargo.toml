@@ -1,0 +1,25 @@
+[package]
+name = "aspace-herdr-core-adapter"
+version = "0.1.0"
+edition = "2021"
+description = "A'Space adapter for herdr-core (D-N053 pas F1): client library + client CLI for the hc protocol, no daemon"
+license = "Apache-2.0"
+publish = false
+
+# Standalone workspace root: this crate lives beside, not inside, the
+# herdr-core workspace (adding it as a member would touch upstream files).
+[workspace]
+
+[lib]
+name = "aspace_herdr_core_adapter"
+path = "src/lib.rs"
+
+[[bin]]
+name = "hc"
+path = "src/bin/hc.rs"
+
+[dependencies]
+herdr-core = { path = "../crates/herdr-core" }
+clap = { version = "4", features = ["derive"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
